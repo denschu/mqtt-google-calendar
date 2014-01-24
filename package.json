@@ -1,0 +1,31 @@
+{
+  "author": "Dennis Schulte <mail@dennis-schulte.de>",
+  "name": "mqtt-google-calendar",
+  "description": "Gooogle Calendar to MQTT bridge",
+  "version": "1.0.0",
+  "keywords": ["mqtt", "automation", "google", "calendar"],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/denschu/mqtt-google-calendar.git"
+  },
+  "main": "mqtt-google-calendar",
+  "bin": {
+    "mqtt-exec": "mqtt-google-calendar.js"
+  },
+  "scripts": { "start" : "./mqtt-google-calendar.js" },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": {
+    "mqtt":">=0.2.0",
+    "optimist":">=0.3.1",
+    "log4js": "*",
+    "express" : "3.1.0", 
+    "oauth" : "0.9.8", 
+    "querystring" : "0.1.0", 
+    "request" : "2.12.0",
+    "node-schedule" : ">=0.1.6"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {}
+}

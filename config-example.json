@@ -1,0 +1,5 @@
+{
+	"calendar_id":"foo@group.calendar.google.com",
+	"client_secret":"foobar",
+   	"client_id":"foobar.apps.googleusercontent.com"              
+}
