@@ -37,7 +37,6 @@ var mqtt_url = url.parse(process.env.MQTT_BROKER_URL || argv.h);
 var auth = (mqtt_url.auth || ':').split(':');
 
 var configuration = {};
-var refreshToken;
 var scheduledPublishes = [];
 
 //Loading config
@@ -50,6 +49,7 @@ if (argv.c || argv.configFile) {
 var clientId = configuration.client_id;
 var clientSecret = configuration.client_secret;
 var calendarId = configuration.calendar_id;
+var refreshToken = configuration.refresh_token;;
 
 //Creating the MQTT Client
 logger.info("Creating client for: " + mqtt_url.hostname);
@@ -147,7 +147,7 @@ function oauth2refreshAccessToken() {
 	logger.info("OAUTH", "Refreshing access token");
   	oa.getOAuthAccessToken(refreshToken, {grant_type:'refresh_token'}, function(err, access_token, refresh_token, results) {
 		if (err)
-		  logger.error("OAUTH", "Error: %s", JSON.stringify(err));
+		  logger.error("OAUTH", "Error: " + JSON.stringify(err));
 		else
 			oauth2parseAccessToken(results);
 	});
