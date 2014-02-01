@@ -198,7 +198,7 @@ function calendarQuery() {
 
 					// Check if the event started in the past (and thus has been scheduled already)
 					if (new Date(item.start.dateTime) < timeMin) {
-						logger.verbose("CALENDAR", "Ignoring Event From past (start@ " + item.start.dateTime + ")"); 
+						logger.info("CALENDAR", "Ignoring Event From past (start@ " + item.start.dateTime + ")"); 
 						continue;
 					}
 

@@ -2,7 +2,7 @@
   "author": "Dennis Schulte <mail@dennis-schulte.de>",
   "name": "mqtt-google-calendar",
   "description": "Gooogle Calendar to MQTT bridge",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": ["mqtt", "automation", "google", "calendar"],
   "repository": {
     "type": "git",
