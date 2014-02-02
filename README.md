@@ -20,7 +20,8 @@ Create/Modify configuration "config.json"
 	{
 		"calendar_id":"foo@group.calendar.google.com",
 		"client_secret":"foobar",
-	   	"client_id":"foobar.apps.googleusercontent.com"              
+	   	"client_id":"foobar.apps.googleusercontent.com",
+	   	"refresh_token":"foo"              
 	}
 
 ## Start application
