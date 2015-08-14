@@ -4,7 +4,7 @@ This application is a Google Calendar bridge that can publish to user defined to
 
 ## Setup
 
-	sudo /opt/node/bin/npm install mqtt-google-calendar -g
+	sudo npm install mqtt-google-calendar -g
 	
 ## Start broker
 
